@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default"  extends="struts-default" namespace="/">
+          <action name="register" class="Action.register">
+               <result name="yes">/registerSuccessful.jsp</result>
+               <result name="no">/registerFailed.jsp</result>
+          </action>
+          <action name="login" class="Action.login">
+                <result name="yes">/studentIndex.jsp</result>
+               <result name="no">/loginFailed.jsp</result>
+          </action>
+          <action name="Tlogin" class="Action.Tlogin">
+                <result name="yes">/teacherIndex.jsp</result>
+               <result name="no">/teacherFailed.jsp</result>
+          </action>
+          <action name="course" class="Action.course">
+                <result name="yes">/importCourse.jsp</result>
+               <result name="no">/right.jsp</result>
+          </action>
+          <action name="grade" class="Action.grade">
+                <result name="yes">/importGrade.jsp</result>
+               <result name="no">/right.jsp</result>
+          </action>
+          <action name="homework" class="Action.homework">
+                <result name="yes">/importHomework.jsp</result>
+               <result name="no">/right.jsp</result>
+          </action>
+         <action name="notice" class="Action.notice">
+                <result name="yes">/importNotice.jsp</result>
+               <result name="no">/right.jsp</result>
+          </action>
+      </package>
+</struts>    
